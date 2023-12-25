@@ -1,9 +1,7 @@
-require('dotenv').config();
-
-module.exports = {
+{
   "development": {
     "username": "postgres",
-    "password": process.env.DB_DEV_PASSWORD,
+    "password": "postgres",
     "database": "exporing_sequelize_development",
     "host": "127.0.0.1",
     "dialect": "postgres"
@@ -19,4 +17,4 @@ module.exports = {
     "use_env_variable": "DATABASE_URL",
     "dialect": "postgres"
   }
-};
+}
